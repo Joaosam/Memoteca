@@ -1,27 +1,68 @@
-# Memoteca
+<h1 align="center">
+  Memoteca 📝
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+<p align="center">
+  <a href="#-sobre-o-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-conceitos-utilizados-no-desenvolvimento">Conceitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar-o-projeto">Executar o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-licença">Licença</a>
+</p>
 
-## Development server
+# 🚧 Sobre o projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Preview: https://portifolio-joaosam.vercel.app/
 
-## Code scaffolding
+Meu primeiro projeto com Angular. Aqui tive a oportunidade de ter o contato com esse framework tão utilizado no mercado. A ideia desse projeto é ter um lugar onde você possa guardar aqueles recados, mensagens, legendas de fotos e recuperá-los quando quiser.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Funcionalidades
 
-## Build
+- Cria, deleta e edita cards
+- Salva as informações dos cards em uma APi (Json Server)
+- Navega entre páginas
+- Responsivo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# 📚 Conceitos Utilizados no Desenvolvimento
 
-## Running unit tests
+- Utilizado a ferramenta Angular CLI para criar um projeto e diversos tipos de arquivos
+- Compreendido a estrutura de um componente em Angular
+- Utilização do property binding, interpolação, event binding e two-way data binding
+- Trabalhamos com algumas das principais diretivas do Angular
+- Navegação dinâmica entre componentes através das rotas
+- Injeção de dependências na aplicação
+- Requisições HTTP através da classe HttpClient e desenvolva um CRUD
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🎨 Layout
 
-## Running end-to-end tests
+<img src=".github/preview-Memoteca.png" width="100%">
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# 🚀 Tecnologias utilizadas
 
-## Further help
+- TypeScript
+- Angular
+- CSS
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# 💻 Como executar o projeto
+
+```bash
+# Clonar repositório
+git clone https://github.com/Joaosam/Memoteca.git
+
+# Navegar até a pasta
+cd Memoteca
+
+# Executar o projeto
+ng serve --open
+```
+
+## 📝 Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+[![NPM](https://img.shields.io/npm/l/react)](hhttps://github.com/Joaosam/Portifolio/blob/main/LICENSE)
+
+<br />
+
+---
+
+Feito com ♥ by Joaosam
