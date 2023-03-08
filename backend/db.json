@@ -1,0 +1,16 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "mensagem": "I love React",
+      "autor": "João",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "mensagem": "Teste arrumado!",
+      "autor": "JP",
+      "modelo": "modelo3"
+    }
+  ]
+}
