@@ -7,12 +7,9 @@
   <a href="#-conceitos-utilizados-no-desenvolvimento">Conceitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar-o-projeto">Executar o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>
 </p>
 
 # 🚧 Sobre o projeto
-
-Preview: https://portifolio-joaosam.vercel.app/
 
 Meu primeiro projeto com Angular. Aqui tive a oportunidade de ter o contato com esse framework tão utilizado no mercado. A ideia desse projeto é ter um lugar onde você possa guardar aqueles recados, mensagens, legendas de fotos e recuperá-los quando quiser.
 
@@ -55,11 +52,6 @@ cd Memoteca
 # Executar o projeto
 ng serve --open
 ```
-
-## 📝 Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-[![NPM](https://img.shields.io/npm/l/react)](hhttps://github.com/Joaosam/Portifolio/blob/main/LICENSE)
 
 <br />
 
