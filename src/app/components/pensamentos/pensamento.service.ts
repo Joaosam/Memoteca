@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Pensamento } from './pensamento/pensamento.component';
 
 @Injectable({
@@ -14,8 +14,17 @@ export class PensamentoService {
     return this.http.post<Pensamento>(this.API, pensamento);
   }
 
-  read() {
-    return this.http.get<Pensamento[]>(this.API);
+  read(page: number, filter: string, favorito: boolean) {
+    let params = new HttpParams().set('_page', page).set('_limit', 6);
+
+    if (filter.trim().length > 1) {
+      params = params.set('q', filter);
+    }
+
+    if (favorito) {
+      params = params.set('favorito', true);
+    }
+    return this.http.get<Pensamento[]>(this.API, { params });
   }
 
   update(pensamento: Pensamento) {
@@ -31,5 +40,10 @@ export class PensamentoService {
 
   readById(id: number) {
     return this.http.get<Pensamento>(`${this.API}/${id}`);
+  }
+
+  updateFavorites(pensamento: Pensamento) {
+    pensamento.favorito = !pensamento.favorito;
+    return this.update(pensamento);
   }
 }

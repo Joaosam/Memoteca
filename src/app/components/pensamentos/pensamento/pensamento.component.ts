@@ -6,6 +6,7 @@ export interface Pensamento {
   mensagem: string;
   autor: string;
   modelo: string;
+  favorito: boolean;
 }
 
 @Component({
@@ -19,6 +20,7 @@ export class PensamentoComponent implements OnInit {
     mensagem: '',
     autor: '',
     modelo: '',
+    favorito: false,
   };
 
   constructor(private service: PensamentoService) {}
@@ -30,5 +32,16 @@ export class PensamentoComponent implements OnInit {
       return 'pensamento-g';
     }
     return 'pensamento-p';
+  }
+
+  mudarIconeFavorito() {
+    if (this.pensamento.favorito) {
+      return 'ativo';
+    }
+    return 'inativo';
+  }
+
+  atualizarFavorito() {
+    this.service.updateFavorites(this.pensamento).subscribe();
   }
 }
